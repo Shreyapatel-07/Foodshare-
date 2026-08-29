@@ -1,0 +1,794 @@
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>FoodShare | Reduce Food Waste</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+
+<!-- ================= NAVBAR ================= -->
+
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+
+    <div class="container">
+
+        <a class="navbar-brand" href="#home">
+            <i class="bi bi-box-seam"></i>
+            FoodShare
+        </a>
+
+        <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarMenu">
+
+            <span class="navbar-toggler-icon"></span>
+
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarMenu">
+
+            <ul class="navbar-nav ms-auto">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#home">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#donate">Donate</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#how">How It Works</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#impact">Impact</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</nav>
+
+
+<!-- ================= HOME ================= -->
+
+<section id="home" class="hero">
+
+    <div class="container">
+
+        <div class="row align-items-center">
+
+            <div class="col-md-7">
+
+                <p class="tagline">
+                    ♻️ SDG 12 | RESPONSIBLE CONSUMPTION
+                </p>
+
+                <h1>
+                    Share Food.<br>
+                    <span>Save Lives.</span>
+                </h1>
+
+                <p class="hero-text">
+                    FoodShare connects people and organisations with
+                    surplus food to help reduce food waste and support
+                    communities in need.
+                </p>
+
+                <a href="#donate" class="btn btn-success me-2">
+                    <i class="bi bi-heart-fill"></i>
+                    Donate Food
+                </a>
+
+                <a href="#how" class="btn btn-outline-light">
+                    Learn More
+                </a>
+
+            </div>
+
+
+            <div class="col-md-5 text-center">
+
+                <div class="hero-icon">
+
+                    <i class="bi bi-basket2-fill"></i>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= ABOUT ================= -->
+
+<section id="about">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <p>01 — ABOUT US</p>
+
+            <h2>Why FoodShare?</h2>
+
+        </div>
+
+        <div class="row align-items-center">
+
+            <div class="col-md-7">
+
+                <p>
+                    Food waste is a major problem in communities around
+                    the world. Restaurants, hotels, events and households
+                    often have extra food that is still safe to eat.
+                    At the same time, many people need access to regular
+                    meals.
+                </p>
+
+                <p>
+                    FoodShare is a simple web-based platform designed
+                    to connect food donors with NGOs and volunteers.
+                    Donors can share information about available surplus
+                    food, while volunteers can help collect and deliver
+                    it to people who need it.
+                </p>
+
+                <p>
+                    Our goal is to reduce unnecessary food waste and
+                    encourage responsible consumption. The project
+                    supports <strong>SDG 12 – Responsible Consumption
+                    and Production</strong> while also contributing to
+                    a healthier and more sustainable community.
+                </p>
+
+            </div>
+
+
+            <div class="col-md-5">
+
+                <div class="mission-box">
+
+                    <i class="bi bi-recycle"></i>
+
+                    <h3>
+                        Our Mission
+                    </h3>
+
+                    <p>
+                        "Reduce food waste by connecting surplus food
+                        with people who need it."
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= DONATE FOOD ================= -->
+
+<section id="donate" class="light-section">
+
+    <div class="container">
+
+        <div class="section-heading text-center">
+
+            <p>02 — DONATE</p>
+
+            <h2>Donate Surplus Food</h2>
+
+            <p>
+                Have extra food? Share the details below.
+            </p>
+
+        </div>
+
+
+        <div class="row justify-content-center">
+
+            <div class="col-md-8">
+
+                <div class="donation-form">
+
+                    <form id="donationForm">
+
+                        <div class="row">
+
+                            <div class="col-md-6 mb-3">
+
+                                <label>
+                                    <i class="bi bi-person"></i>
+                                    Donor Name
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="donorName"
+                                    class="form-control"
+                                    placeholder="Enter your name"
+                                    required>
+
+                            </div>
+
+
+                            <div class="col-md-6 mb-3">
+
+                                <label>
+                                    <i class="bi bi-telephone"></i>
+                                    Phone Number
+                                </label>
+
+                                <input
+                                    type="tel"
+                                    id="phone"
+                                    class="form-control"
+                                    placeholder="Enter phone number"
+                                    required>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="mb-3">
+
+                            <label>
+                                <i class="bi bi-egg-fried"></i>
+                                Type of Food
+                            </label>
+
+                            <select
+                                id="foodType"
+                                class="form-select"
+                                required>
+
+                                <option value="">
+                                    Select food type
+                                </option>
+
+                                <option>
+                                    Cooked Food
+                                </option>
+
+                                <option>
+                                    Packaged Food
+                                </option>
+
+                                <option>
+                                    Fruits & Vegetables
+                                </option>
+
+                                <option>
+                                    Bakery Items
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <div class="row">
+
+                            <div class="col-md-6 mb-3">
+
+                                <label>
+                                    <i class="bi bi-box"></i>
+                                    Quantity
+                                </label>
+
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    placeholder="Example: 20 meals"
+                                    required>
+
+                            </div>
+
+
+                            <div class="col-md-6 mb-3">
+
+                                <label>
+                                    <i class="bi bi-geo-alt"></i>
+                                    Location
+                                </label>
+
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    placeholder="Enter location"
+                                    required>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="mb-3">
+
+                            <label>
+                                <i class="bi bi-chat-left-text"></i>
+                                Additional Information
+                            </label>
+
+                            <textarea
+                                class="form-control"
+                                rows="4"
+                                placeholder="Enter additional details">
+                            </textarea>
+
+                        </div>
+
+
+                        <button
+                            type="submit"
+                            class="btn btn-success">
+
+                            <i class="bi bi-send-fill"></i>
+                            Submit Donation
+
+                        </button>
+
+                    </form>
+
+
+                    <div
+                        id="donationMessage"
+                        class="alert alert-success mt-3 d-none">
+
+                        Thank you! Your food donation has been
+                        registered successfully.
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= HOW IT WORKS ================= -->
+
+<section id="how">
+
+    <div class="container">
+
+        <div class="section-heading text-center">
+
+            <p>03 — PROCESS</p>
+
+            <h2>How FoodShare Works</h2>
+
+        </div>
+
+
+        <div class="row g-4">
+
+
+            <div class="col-md-4">
+
+                <div class="step-card">
+
+                    <div class="step-number">
+                        1
+                    </div>
+
+                    <i class="bi bi-box-seam"></i>
+
+                    <h4>
+                        Donate
+                    </h4>
+
+                    <p>
+                        Donors provide information about their
+                        available surplus food.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-md-4">
+
+                <div class="step-card">
+
+                    <div class="step-number">
+                        2
+                    </div>
+
+                    <i class="bi bi-people-fill"></i>
+
+                    <h4>
+                        Connect
+                    </h4>
+
+                    <p>
+                        NGOs and volunteers can find suitable
+                        food donations in their area.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-md-4">
+
+                <div class="step-card">
+
+                    <div class="step-number">
+                        3
+                    </div>
+
+                    <i class="bi bi-heart-fill"></i>
+
+                    <h4>
+                        Share
+                    </h4>
+
+                    <p>
+                        Volunteers collect the food and help
+                        distribute it to people in need.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= IMPACT ================= -->
+
+<section id="impact" class="impact-section">
+
+    <div class="container">
+
+        <div class="section-heading text-center">
+
+            <p>04 — OUR IMPACT</p>
+
+            <h2>Making A Difference</h2>
+
+        </div>
+
+
+        <div class="row text-center g-4">
+
+
+            <div class="col-md-3">
+
+                <div class="impact-card">
+
+                    <i class="bi bi-basket-fill"></i>
+
+                    <h2>1,250+</h2>
+
+                    <p>Meals Saved</p>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-md-3">
+
+                <div class="impact-card">
+
+                    <i class="bi bi-box2-heart-fill"></i>
+
+                    <h2>350+</h2>
+
+                    <p>Donations</p>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-md-3">
+
+                <div class="impact-card">
+
+                    <i class="bi bi-people-fill"></i>
+
+                    <h2>150+</h2>
+
+                    <p>Volunteers</p>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-md-3">
+
+                <div class="impact-card">
+
+                    <i class="bi bi-tree-fill"></i>
+
+                    <h2>500+</h2>
+
+                    <p>Kg Waste Reduced</p>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FOOD TIPS ================= -->
+
+<section id="tips">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <p>05 — AWARENESS</p>
+
+            <h2>Simple Ways To Reduce Food Waste</h2>
+
+        </div>
+
+
+        <div class="row g-4">
+
+
+            <div class="col-md-4">
+
+                <div class="tip-card">
+
+                    <i class="bi bi-cart-check-fill"></i>
+
+                    <h4>Plan Your Shopping</h4>
+
+                    <p>
+                        Make a shopping list and buy only the amount
+                        of food you need.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-md-4">
+
+                <div class="tip-card">
+
+                    <i class="bi bi-refrigerator"></i>
+
+                    <h4>Store Food Properly</h4>
+
+                    <p>
+                        Store food correctly to keep it fresh for
+                        a longer period.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-md-4">
+
+                <div class="tip-card">
+
+                    <i class="bi bi-arrow-repeat"></i>
+
+                    <h4>Reuse Leftovers</h4>
+
+                    <p>
+                        Turn safe leftover food into another meal
+                        instead of throwing it away.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= CONTACT ================= -->
+
+<section id="contact" class="contact-section">
+
+    <div class="container">
+
+        <div class="section-heading text-center">
+
+            <p>06 — CONTACT</p>
+
+            <h2>Get In Touch</h2>
+
+        </div>
+
+
+        <div class="row justify-content-center">
+
+            <div class="col-md-8">
+
+                <form>
+
+                    <div class="mb-3">
+
+                        <label>
+                            Your Name
+                        </label>
+
+                        <input
+                            type="text"
+                            class="form-control"
+                            placeholder="Enter your name"
+                            required>
+
+                    </div>
+
+
+                    <div class="mb-3">
+
+                        <label>
+                            Email Address
+                        </label>
+
+                        <input
+                            type="email"
+                            class="form-control"
+                            placeholder="Enter your email"
+                            required>
+
+                    </div>
+
+
+                    <div class="mb-3">
+
+                        <label>
+                            Message
+                        </label>
+
+                        <textarea
+                            class="form-control"
+                            rows="5"
+                            placeholder="Write your message..."
+                            required></textarea>
+
+                    </div>
+
+
+                    <button
+                        type="submit"
+                        class="btn btn-success">
+
+                        Send Message
+                        <i class="bi bi-arrow-right"></i>
+
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-md-6">
+
+                <h4>
+                    <i class="bi bi-box-seam"></i>
+                    FoodShare
+                </h4>
+
+               
+
+            </div>
+
+
+            
+
+        </div>
+
+
+        <hr>
+
+        <p class="text-center">
+            &copy; 2026 FoodShare | SDG 12 
+        </p>
+
+    </div>
+
+</footer>
+
+
+<!-- Bootstrap JavaScript -->
+
+<script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+</script>
+
+<!-- External JavaScript -->
+
+<script src="script.js"></script>
+
+
+</body>
+
+</html>
